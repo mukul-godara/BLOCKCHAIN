@@ -1,0 +1,30 @@
+{
+  "name": "blockchainproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index2.js",
+    "dev": "cross-env NODE_ENV=production node index2.js",
+    "dev-peer": "cross-env GENERATE_PEER_PORT='true' nodemon index2.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "hex-to-binary": "^1.0.1",
+    "redis": "^4.6.5",
+    "request": "^2.88.0",
+    "socket.io": "^4.6.1",
+    "socket.io-p2p-server": "^1.2.0",
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.1",
+    "nodemon": "^2.0.20"
+  }
+}
